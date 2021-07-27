@@ -1,0 +1,67 @@
+
+
+/* Máy tính bản */
+@media (max-width:1024px){
+    .player{
+        flex-direction: column;
+    }
+    .dashboard_control {
+        max-width: 760px;
+        width: 700px;
+    }
+    .playlist_view{
+        max-width: 760px;
+        width: 700px;
+        margin-bottom: 70px;
+        margin-top: 20px;
+    }
+}
+/* Điện thoại */
+@media (max-width:739px){
+    .player{
+        flex-direction: column;
+    }
+    .cd-thumb{
+        display: none;
+    }
+    .control{
+        padding: 0;
+        font-size: 15px;
+    }
+    .control .btn{
+        padding: 0;
+    }
+    .control i {
+        font-size: 13px;
+    }
+    .control .btn-toggle-play {
+        width: 30px;
+        height: 30px;
+    }
+    header h4 {
+        font-size: 13px;
+    }
+    header h3{
+        font-size: 14px;
+    }
+    header h2{
+        font-size: 15px;
+    }
+    .dashboard_control {
+        max-width: 50vh;
+        width: 50vh;
+        max-height: 200px;
+    }
+    .playlist_view{
+        max-width: 50vh;
+        width: 50vh;
+        margin-bottom: 70px;
+        margin-top: 20px;
+    }   
+    #copy_right {
+        display: none;
+    }
+    #copy_right-sub{
+        display: block;
+    }
+}

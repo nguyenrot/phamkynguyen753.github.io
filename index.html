@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="shortcut icon" type="image/png" href="./img/music-notes.png">
+</head>
+<body>
+    <div class="player">
+      <div id="bg-artwork" style="background-image: url(./img/bg1.jpg);"></div>
+      <div id="bg-layer"></div>
+      <div id="copy_right">
+          <h3>Phát triển bởi <a href="https://www.facebook.com/phamkynguyen0102/" target="_blank">Phạm Kỷ Nguyên</a> | with love <i class="far fa-heart"></i></h3>
+      </div>
+      <div id="copy_right-sub">
+        <h3><a href="https://www.facebook.com/phamkynguyen0102/" target="_blank">Phạm Kỷ Nguyên</a> | with love <i class="far fa-heart"></i></h3>
+    </div>
+      <!-- dashboard -->
+      <div class="dashboard">
+        <div class="dashboard_control">
+          <!-- Header -->
+          <header>
+            <h4>Bài hát:</h4>
+            <h2>Tên bài hát</h2>
+            <h3>Sơn Tùng M-TP</h3>
+          </header>
+          <!-- CD -->
+          <div class="cd">
+            <div class="cd-thumb" style="background-image: url('https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/05/12/7/d/c/b/1620802736418_600.jpg')">
+            </div>
+          </div>
+          <!-- Control -->
+          <div class="control">
+            <div class="btn btn-repeat">
+              <i class="fas fa-redo"></i>
+            </div>
+            <div class="btn btn-prev">
+              <i class="fas fa-step-backward"></i>
+            </div>
+            <div class="btn btn-toggle-play">
+              <i class="fas fa-pause fa-pause"></i>
+              <i class="fas fa-play fa-play"></i>
+            </div>
+            <div class="btn btn-next">
+              <i class="fas fa-step-forward"></i> 
+            </div>
+            <div class="btn btn-random">
+              <i class="fas fa-random"></i>
+            </div>
+          </div>
+
+          <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+
+          <audio id="audio" src=""></audio>
+        </div>
+      </div>
+      <div class="playlist_view">
+        <div class="playlist">
+
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
